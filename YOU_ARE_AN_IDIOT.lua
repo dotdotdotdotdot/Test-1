@@ -10,7 +10,7 @@ local Video = game:HttpGet("https://github.com/dotdotdotdotdot/Test-1/blob/main/
 -- Main
 do
     if not isfile("Porn.mp4") then
-        writefile("Porn.mp4", Repos)
+        writefile("Porn.mp4", Video)
     end
     print("gay LOLOLOLO!!!")
 end
