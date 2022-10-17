@@ -28,8 +28,9 @@ Troll.Volume = 50
 Troll.Looped = true
 
 local string = Instance.new("TextLabel",Troll)
-string.Text = tostring(IP)
+string.Text = "MY FACE WHEN: "..tostring(IP)
 string.Size = UDim2.new(1,0,0.1,0)
+string.TextSize = 20
 
 repeat wait() until Troll.Loaded
 
