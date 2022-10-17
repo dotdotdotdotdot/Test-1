@@ -27,7 +27,9 @@ Troll.Video = syn and getsynasset("Porn.mp4") or getcustomasset("Porn.mp4")
 
 local string = Instance.new("TextLabel",Troll)
 string.Text = tostring(IP)
-string.Size = UDim2.new(1,0,0.5,0)
+string.Position = UDim2.new(0.5,0,0.5,0)
+string.AnchorPoint = Vector2.new(0.5,0.5)
+string.Size = UDim2.new(0.5,0,0.5,0)
 
 repeat wait() until Troll.Loaded
 
